@@ -1,3 +1,9 @@
+/** ATtiny84 test
+ * 
+ * Author: Michael Shimniok (www.bot-thoughts.com)
+ * Description: Sequentially turns on a single pin on PA0-7 and PB0-2 (PB3 is reset)
+ *
+ */
 #include <avr/io.h>
 #include <avr/interrupt.h>
 #include <util/delay.h>
