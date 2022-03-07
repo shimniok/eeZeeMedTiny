@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -22,8 +22,8 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -49,6 +49,10 @@
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="no"/>
@@ -57,6 +61,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
 <layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="no" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="no" active="yes"/>
@@ -65,12 +70,32 @@
 <layer number="105" name="tPlate" color="7" fill="1" visible="no" active="yes"/>
 <layer number="106" name="bPlate" color="7" fill="1" visible="no" active="yes"/>
 <layer number="107" name="Crop" color="7" fill="1" visible="no" active="yes"/>
+<layer number="108" name="tplace-old" color="10" fill="1" visible="no" active="yes"/>
+<layer number="109" name="ref-old" color="11" fill="1" visible="no" active="yes"/>
+<layer number="110" name="fp0" color="7" fill="1" visible="no" active="yes"/>
+<layer number="111" name="LPC17xx" color="7" fill="1" visible="no" active="yes"/>
+<layer number="112" name="tSilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="113" name="IDFDebug" color="4" fill="1" visible="no" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
-<layer number="121" name="tsilk" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="122" name="bsilk" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="121" name="tsilk" color="14" fill="1" visible="no" active="yes"/>
+<layer number="122" name="bsilk" color="6" fill="1" visible="no" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="129" name="Mask" color="7" fill="1" visible="no" active="yes"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="153" name="FabDoc1" color="7" fill="1" visible="no" active="yes"/>
+<layer number="154" name="FabDoc2" color="7" fill="1" visible="no" active="yes"/>
+<layer number="155" name="FabDoc3" color="7" fill="1" visible="no" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="no" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="no"/>
 <layer number="201" name="201bmp" color="2" fill="1" visible="no" active="no"/>
 <layer number="202" name="202bmp" color="3" fill="1" visible="no" active="no"/>
@@ -96,12 +121,21 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="225" name="225bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="226" name="226bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="227" name="227bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="228" name="228bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="229" name="229bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="230" name="230bmp" color="7" fill="1" visible="no" active="yes"/>
 <layer number="231" name="Eagle3D_PG1" color="14" fill="1" visible="no" active="yes"/>
 <layer number="232" name="Eagle3D_PG2" color="14" fill="2" visible="no" active="yes"/>
 <layer number="233" name="Eagle3D_PG3" color="14" fill="4" visible="no" active="yes"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="no" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="no" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
+<layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
 <plain>
@@ -114,65 +148,8 @@
 <wire x1="27.432" y1="16.256" x2="1.27" y2="16.256" width="0" layer="20"/>
 <wire x1="1.27" y1="16.256" x2="0" y2="14.986" width="0" layer="20"/>
 <text x="26.924" y="4.064" size="0.8128" layer="26" font="vector" rot="MR90">bot-thoughts.com</text>
-<polygon width="0.254" layer="22">
-<vertex x="17.278809375" y="7.17201875" curve="-9.499967"/>
-<vertex x="17.085978125" y="7.27133125"/>
-<vertex x="16.607165625" y="6.880840625"/>
-<vertex x="16.278840625" y="7.209165625"/>
-<vertex x="16.66933125" y="7.687978125" curve="-19.000007"/>
-<vertex x="16.503890625" y="8.0873875"/>
-<vertex x="15.8892" y="8.1498375"/>
-<vertex x="15.8892" y="8.6141625"/>
-<vertex x="16.503890625" y="8.6766125" curve="-19.000007"/>
-<vertex x="16.66933125" y="9.076021875"/>
-<vertex x="16.278840625" y="9.554834375"/>
-<vertex x="16.607165625" y="9.883159375"/>
-<vertex x="17.085978125" y="9.49266875" curve="-19.000007"/>
-<vertex x="17.4853875" y="9.658109375"/>
-<vertex x="17.5478375" y="10.2728"/>
-<vertex x="18.0121625" y="10.2728"/>
-<vertex x="18.0746125" y="9.658109375" curve="-19.000007"/>
-<vertex x="18.474021875" y="9.49266875"/>
-<vertex x="18.952834375" y="9.883159375"/>
-<vertex x="19.281159375" y="9.554834375"/>
-<vertex x="18.89066875" y="9.076021875" curve="-19.000007"/>
-<vertex x="19.056109375" y="8.6766125"/>
-<vertex x="19.6708" y="8.6141625"/>
-<vertex x="19.6708" y="8.1498375"/>
-<vertex x="19.056109375" y="8.0873875" curve="-19.000007"/>
-<vertex x="18.89066875" y="7.687978125"/>
-<vertex x="19.281159375" y="7.209165625"/>
-<vertex x="18.952834375" y="6.880840625"/>
-<vertex x="18.474021875" y="7.27133125" curve="-9.499967"/>
-<vertex x="18.281190625" y="7.17201875"/>
-<vertex x="18.0078125" y="7.832015625" curve="67.499851"/>
-<vertex x="18.3753" y="8.382" curve="247.499865"/>
-<vertex x="17.5521875" y="7.832015625"/>
-</polygon>
-<text x="19.304" y="6.35" size="1.016" layer="25" font="vector">Rev 0.3A</text>
-<text x="27.686" y="4.064" size="1.016" layer="25" font="vector" rot="R90">eeZeeMedTiny</text>
-<wire x1="24.814809375" y1="2.363190625" x2="21.921190625" y2="2.363190625" width="0.2032" layer="22"/>
-<wire x1="21.921190625" y1="2.363190625" x2="21.921190625" y2="3.81" width="0.2032" layer="22"/>
-<wire x1="24.814809375" y1="2.363190625" x2="24.814809375" y2="3.81" width="0.2032" layer="22"/>
-<wire x1="24.814809375" y1="3.81" x2="23.368" y2="5.256809375" width="0.2032" layer="22" curve="90"/>
-<wire x1="23.368" y1="5.256809375" x2="21.921190625" y2="3.81" width="0.2032" layer="22" curve="90"/>
-<wire x1="23.368" y1="5.256809375" x2="23.368" y2="5.4014875" width="0.2032" layer="22"/>
-<circle x="23.65735625" y="3.954678125" radius="0.5787125" width="0.2032" layer="22"/>
-<circle x="22.644609375" y="3.8678625" radius="0.44263125" width="0.2032" layer="22"/>
-<wire x1="24.091390625" y1="3.2312875" x2="22.35525" y2="3.086609375" width="0.2032" layer="22" curve="-30"/>
-<wire x1="22.35525" y1="3.086609375" x2="22.499928125" y2="2.79725" width="0.2032" layer="22"/>
-<wire x1="22.499928125" y1="2.79725" x2="23.802034375" y2="2.79725" width="0.2032" layer="22" curve="30"/>
-<wire x1="23.802034375" y1="2.79725" x2="24.091390625" y2="3.2312875" width="0.2032" layer="22"/>
-<wire x1="25.104165625" y1="2.652571875" x2="25.9722375" y2="3.954678125" width="0.2032" layer="22" curve="-120"/>
-<wire x1="25.9722375" y1="3.954678125" x2="25.68288125" y2="5.835521875" width="0.2032" layer="22" curve="-140"/>
-<wire x1="25.68288125" y1="5.835521875" x2="23.802034375" y2="6.70359375" width="0.2032" layer="22" curve="-120"/>
-<wire x1="23.802034375" y1="6.70359375" x2="21.921190625" y2="6.4142375" width="0.2032" layer="22" curve="-120"/>
-<wire x1="21.921190625" y1="6.4142375" x2="20.908440625" y2="5.11210625" width="0.2032" layer="22" curve="-140"/>
-<wire x1="20.908440625" y1="5.11210625" x2="20.908440625" y2="3.665321875" width="0.2032" layer="22" curve="-140"/>
-<wire x1="20.908440625" y1="3.665321875" x2="21.48715625" y2="2.50789375" width="0.2032" layer="22" curve="-140"/>
-<circle x="23.802034375" y="4.171696875" radius="0.1880875" width="0.34724375" layer="22"/>
-<circle x="22.7892875" y="4.012540625" radius="0.115746875" width="0.231496875" layer="22"/>
-<circle x="23.368" y="5.546165625" radius="0.144678125" width="0.28935625" layer="22"/>
+<text x="23.368" y="6.858" size="0.8128" layer="25" font="vector" ratio="10" align="bottom-center">Rev 0.4</text>
+<text x="27.686" y="4.064" size="1.016" layer="25" font="vector" ratio="10" rot="R90">eeZeeMedTiny</text>
 <polygon width="0.4064" layer="21">
 <vertex x="20.828" y="13.208"/>
 <vertex x="20.828" y="10.668"/>
@@ -379,6 +356,8 @@
 <text x="26.924" y="4.064" size="0.8128" layer="122" font="vector" ratio="25" rot="MR90">bot-thoughts.com</text>
 <text x="2.921" y="7.493" size="1.27" layer="121" font="vector" ratio="16">TINY24/44/84</text>
 <text x="21.082" y="4.572" size="1.27" layer="121" font="vector" ratio="16">reset</text>
+<text x="22.606" y="5.334" size="0.8128" layer="26" font="vector" ratio="10" rot="MR90" align="bottom-center">cc-by-sa</text>
+<text x="19.05" y="8.382" size="0.8128" layer="26" font="vector" ratio="10" rot="MR90" align="bottom-center">is.gd/BC8POr</text>
 </plain>
 <libraries>
 <library name="rcl">
@@ -628,6 +607,61 @@ Based on the following sources:&lt;p&gt;
 </package>
 </packages>
 </library>
+<library name="bt">
+<description>&lt;b&gt;Miscellaneous parts&lt;/b&gt;
+
+&lt;p&gt;Created by Michael Shimniok &lt;a href="http://www.bot-thoughts.com/"&gt;www.bot-thoughts.com&lt;/a&gt;&lt;/b&gt;</description>
+<packages>
+<package name="BTLOGOS">
+<description>Bot Thoughts Logo</description>
+<circle x="-0.191171875" y="1.086184375" radius="0.213359375" width="0.167640625" layer="25"/>
+<polygon width="0.1524" layer="25">
+<vertex x="0.930584375" y="0.2378"/>
+<vertex x="1.050915625" y="0.16"/>
+<vertex x="1.379240625" y="0.488325"/>
+<vertex x="1.125925" y="0.829965625" curve="19.000023"/>
+<vertex x="1.2608875" y="1.1836625"/>
+<vertex x="1.707921875" y="1.261359375"/>
+<vertex x="1.707921875" y="1.740921875"/>
+<vertex x="1.2608875" y="1.7881375" curve="19.000023"/>
+<vertex x="1.125925" y="2.12659375"/>
+<vertex x="1.39448125" y="2.498715625"/>
+<vertex x="1.050915625" y="2.827040625"/>
+<vertex x="0.694034375" y="2.573725" curve="19.000023"/>
+<vertex x="0.355578125" y="2.723928125"/>
+<vertex x="0.293121875" y="3.155721875"/>
+<vertex x="-0.186440625" y="3.155721875"/>
+<vertex x="-0.248896875" y="2.693446875" curve="19.000023"/>
+<vertex x="-0.5721125" y="2.558484375"/>
+<vertex x="-0.974715625" y="2.827040625"/>
+<vertex x="-1.2878" y="2.51395625"/>
+<vertex x="-1.01924375" y="2.141834375" curve="19.000023"/>
+<vertex x="-1.169446875" y="1.803378125"/>
+<vertex x="-1.61648125" y="1.756159375"/>
+<vertex x="-1.61648125" y="1.261359375"/>
+<vertex x="-1.1846875" y="1.198903125" curve="19.000023"/>
+<vertex x="-1.034484375" y="0.84520625"/>
+<vertex x="-1.303040625" y="0.503565625"/>
+<vertex x="-0.959475" y="0.16"/>
+<vertex x="-0.82390625" y="0.268278125"/>
+<vertex x="-0.82390625" y="1.4478" curve="-85"/>
+<vertex x="-0.091440625" y="2.33171875" curve="-300"/>
+<vertex x="0.213359375" y="2.33171875"/>
+<vertex x="0.213359375" y="2.31648125" curve="-85"/>
+<vertex x="0.930584375" y="1.4478"/>
+</polygon>
+<circle x="0.2507875" y="1.086184375" radius="0.213359375" width="0.167640625" layer="25"/>
+<polygon width="0.0762" layer="25">
+<vertex x="-0.320040625" y="0.594359375"/>
+<vertex x="0.289559375" y="0.594359375"/>
+<vertex x="0.137159375" y="0.396240625"/>
+<vertex x="-0.19811875" y="0.396240625"/>
+</polygon>
+<wire x1="0.03048125" y1="1.02108125" x2="0.03048125" y2="1.2192" width="0.167640625" layer="25" curve="-320.797854"/>
+<wire x1="0.04571875" y1="1.2192" x2="0.04571875" y2="1.02108125" width="0.167640625" layer="25" curve="-320.797854"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -719,6 +753,9 @@ Please make sure your boards conform to these design rules.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
@@ -844,8 +881,9 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="18.288" y="11.303" size="1.27" layer="28" rot="MR0"/>
 </element>
 <element name="S1" library="mes_electromech" package="6MMTACTILE_RECT" value="reset" x="23.368" y="2.286" smashed="yes" rot="R180">
-<attribute name="VALUE" x="21.082" y="4.572" size="1.27" layer="27" font="vector"/>
+<attribute name="VALUE" x="23.368" y="4.572" size="1.016" layer="27" font="vector" ratio="10" align="bottom-center"/>
 </element>
+<element name="U$1" library="bt" package="BTLOGOS" value="BTLOGO-LOGO-SM" x="23.368" y="5.334" rot="MR90"/>
 </elements>
 <signals>
 <signal name="GND">
