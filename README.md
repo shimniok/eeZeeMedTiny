@@ -10,4 +10,4 @@ Easy to breadboard, prototype and program ATtiny84 with eeZee Medium Tiny.
 
 ![top view](documentation/images/20150731112349.jpg)
 
-![bottom view](20150731112504.jpg)
+![bottom view](documentation/images/20150731112504.jpg)
