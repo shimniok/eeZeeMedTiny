@@ -8,6 +8,6 @@ Easy to breadboard, prototype and program ATtiny84 with eeZee Medium Tiny.
 
 [For sale on Tindie.com](https://www.tindie.com/products/bot_thoughts/attiny84-development-board/)
 
-![top view](documentation/images/20150731112349.jpg)
+![top view](documentation/images/20150731142104.jpg)
 
-![bottom view](documentation/images/20150731112504.jpg)
+![bottom view](documentation/images/20150731112349.jpg)
